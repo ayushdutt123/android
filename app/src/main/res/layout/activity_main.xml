@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="@drawable/bg2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="31dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Create Account"
+                android:textColor="@color/blue"
+                android:textSize="45sp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputback"
+                android:drawableLeft="@drawable/baseline_person1"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="Full Name..."
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textColorHint="@color/blue"></EditText>
+
+            <EditText
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputback"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="Email..."
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textColorHint="@color/blue"></EditText>
+
+            <EditText
+                android:id="@+id/txtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/inputback"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="Password..."
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textColorHint="@color/blue"></EditText>
+
+            <RadioGroup
+                android:id="@+id/rdb_gender"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdb_male"
+                    android:layout_width="90dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="left"
+                    android:text="Male"
+                    android:checked="true"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rdb_female"
+                    android:layout_width="90dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:text="Female"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp"></RadioButton>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/img_register"
+                android:layout_width="130dp"
+                android:layout_height="55dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/inputback"
+                android:text="Register Now"
+                android:textColor="@color/blue"
+                android:src="@drawable/btn_arrow2"></Button>
+
+            <TextView
+                android:id="@+id/txtlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center"
+                android:layout_marginTop="50dp"
+                android:text="Already Register?Click Here to Login"
+                android:textColor="@color/black_1"
+                android:textSize="15sp"></TextView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
